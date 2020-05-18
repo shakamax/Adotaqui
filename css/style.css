@@ -365,14 +365,3 @@ input:-webkit-autofill
     }
 }
 
-.background-purple {
-    background-image: linear-gradient(180deg,#ae38ea 10%,#6a529a 100%);
-}
-
-.navbar-brand {
-    font-weight: 900;
-}
-
-a:hover {
-    font-weight: 800;
-}

@@ -36,12 +36,35 @@
       <input class="form-control mr-sm-2" type="search" placeholder="O que procura?" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="far fa-search"></i></button>
     </form>
-    &nbsp;
-    <a class="nav-item" data-toggle="modal" data-target="#exampleModalCenter">Visitante</a> <i class="fal fa-user fa-2x"></i>
+    <div>
+      &nbsp;
+    </div>
+    <a class="nav-item linkmodal" data-toggle="modal" data-target="#exampleModalCenter" style="color: #f8ffff;">Visitante <img class="img-fluid img-profile rounded-circle" src="img/user.png"></a>
   </div>
-</nav>
+</nav>  
 
-
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Faça seu login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="get" class="form-group">
+          <div class="col-12"></div>
+          <label></label>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <?php 
   include('layout/footer.php');
