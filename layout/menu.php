@@ -52,7 +52,7 @@
           <div class="col-12">&nbsp;</div>
           <div class="col-12 text-center">
             <label>Email</label>
-            <input type="email" name="email" class="form-control">
+            <input placeholder="Ex: joaozinho@email.com" type="email" name="email" class="form-control">
           </div>
           <div class="col-12">&nbsp;</div>
           <div class="col-12 text-center">
