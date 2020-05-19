@@ -1,12 +1,12 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top background-purple">
-  <a class="navbar-brand" href="home.php">Adotaqui! <i class="fas fa-paw"></i></a>
+  <a class="navbar-brand" href="pag1.php">Adotaqui! <i class="fas fa-paw"></i></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
-        <a class="nav-link" href="home.php">Home</a>
+        <a class="nav-link" href="pag1.php">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Nossos amigos</a>
