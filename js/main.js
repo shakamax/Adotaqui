@@ -24,6 +24,10 @@ $(document).ready(function () {
         gallery: { enabled: true }
     });
 
+    $(document).ready(function(e) {
+       var h = $('nav').height();
+       $('.conteudo').animate({ paddingTop: h });
+    });
 
     // Owl-carousel
 
