@@ -15,7 +15,7 @@
 
        //Esse codigo pega a altura da navbar e coloca numa variavel com acrescimo de 30
 
-       var h = $('nav').height() + 30;
+       var h = $('nav').height() + 290;
        //depois eu coloco na classe conteudo como paddingtop.
        $('.conteudo').css({ paddingTop: h });
        //tudo isso assim que a pagina carrega
