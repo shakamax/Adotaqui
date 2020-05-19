@@ -10,6 +10,7 @@
 a:hover {
     font-weight: 800;
     cursor: pointer;
+    text-decoration: initial;
 }
 
 .img-profile {
@@ -63,9 +64,16 @@ a:hover {
 
 .card1 {
     position:absolute;
-    left: 16%;
+    left: 14.5%;
     top: 54%;
     width: 70%;
+}
+
+.card2 {
+    width: 100%;
+    position: relative;
+    margin-top: 30%;
+    margin-bottom: 2%;
 }
 
 .pintado {
@@ -85,6 +93,20 @@ footer {
     text-align: center;
     background-image: linear-gradient(180deg,#f4aa24 10%,#c37f03 100%);
     width: 100%;
+}
+
+.titulo h5 {
+    font-size: 20px;
+    margin-bottom: 2%;
+    margin-top: -5%;
+}
+
+.subtitulo h6 {
+    font-size: 14px;
+}
+
+a {
+    color: #ae38ea;
 }
 
 .prime {
