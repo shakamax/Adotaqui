@@ -1,4 +1,9 @@
 
+	<p>&nbsp;</p>
+	<footer>
+		<p> &copy; 2020 - Todos os direitos reservados :: Desenvolvido por Devpix.</p>
+	</footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.5.1.slim.min.js" type="text/javascript"></script>

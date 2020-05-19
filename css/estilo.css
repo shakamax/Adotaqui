@@ -80,3 +80,11 @@ a:hover {
     text-align: center;
     margin-left: 45%;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-image: linear-gradient(180deg,#f4aa24 10%,#c37f03 100%);
+    width: 100%;
+}
