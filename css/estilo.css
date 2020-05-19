@@ -54,3 +54,29 @@ a:hover {
 .cadastrarse {
 	padding-left: 5px;
 }
+
+.img1 {
+    width: 100%;
+    position:relative;
+    padding-top: 45px;
+}
+
+.card1 {
+    position:absolute;
+    left: 16%;
+    top: 54%;
+    width: 70%;
+}
+
+.pintado {
+    background-color: #F4AA24;
+}
+
+.fonte {
+    font-family: sans-serif;
+}
+
+.centro {
+    text-align: center;
+    margin-left: 45%;
+}
