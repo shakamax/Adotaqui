@@ -105,3 +105,14 @@ body {
     background-position: top; 
 }
 
+.form-control-file {
+    width: 100%;
+    min-height: 60px;
+    cursor: pointer;
+}
+
+.avatar {
+    max-width: 70px;
+    max-height: 70px;
+
+}
