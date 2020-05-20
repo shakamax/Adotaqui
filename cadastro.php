@@ -5,7 +5,7 @@
  ?>
 <div class="container conteudo">
 	<div class="card">
-		<div class="card-header bg-gradient-warning text-center">
+		<div class="card-header pintado text-center">
 			Cadastro de bichinhos
 		</div>
 		<div class="card-body">
