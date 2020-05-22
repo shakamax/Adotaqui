@@ -6,14 +6,16 @@
 <div class="container conteudo">
 	<div class="card">
 		<div class="card-header pintado text-center">
-			Cadastro de bichinhos
+			<h2>
+				Cadastre seu amigo
+			</h2>
 		</div>
 		<div class="card-body">
 			<form class="form-group">
 				<div class="form-row">
 					<div class="col-md-6 col-sm-12">
 						<label for="nome">Nome</label>
-						<input type="text" name="nome" class="form-control">
+						<input type="text" placeholder="Ex: Rex" name="nome" class="form-control">
 					</div>
 					<div class="col-md-6 col-sm-12">
 						<label for="porte">Porte</label>						
@@ -54,17 +56,22 @@
 					<div class="col-sm-12 col-md-6">
 						<label for="sobre">Nos fale um pouco mais sobre o seu amigo.</label>
 						<textarea class="form-control" placeholder="Ex : Dócil mas é agitado, vai passar o dia inteiro correndo no seu quintal" rows="5"></textarea>
+						<P>&nbsp;</P>
 					</div>
 					<div class="col-sm-12 col-md-6 text-center">
 						<img src="img/dog.jpg" class="img-fluid avatar">
 						<div class="dflex justify-content-center">
 							<div class="btn btn-gradient-success btn-rounded">
-								<span>Adicionar foto <input type="file"></span>
+								 <input class="custom-file-input form-control-file" type="file" id="avatar"><span>Adicionar foto</span> </input>
 								
 							</div>
 						</div>
 					</div>
-
+				</div>
+				<div class="form-row">
+					<div class="col-12 text-center">
+						<button type="submit" class="btn btn-success btn-gradient-success">Cadastrar</button>
+					</div>	
 				</div>
 			</form>
 		</div>

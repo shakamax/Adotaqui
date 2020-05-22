@@ -107,7 +107,7 @@ body {
 
 .form-control-file {
     width: 100%;
-    min-height: 60px;
+    max-height: 10px;
     cursor: pointer;
 }
 
@@ -116,3 +116,4 @@ body {
     max-height: 70px;
 
 }
+
