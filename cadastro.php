@@ -16,6 +16,8 @@
 					<div class="col-md-6 col-sm-12">
 						<label for="nome">Nome</label>
 						<input type="text" placeholder="Ex: Rex" name="nome" class="form-control">
+						<div class="col-12">&nbsp;</div>
+
 					</div>
 					<div class="col-md-6 col-sm-12">
 						<label for="porte">Porte</label>						
@@ -26,6 +28,8 @@
 							<option value="Grande">Grande – De 50 a 69cm. - de 25 a 45kg.</option>
 							<option value="Gigante">Gigante – Acima de 70cm. - de 45 a 60kg.</option>
 						</select>
+						<div class="col-12">&nbsp;</div>
+
 					</div>
 				</div>
 				<div class="col-12">&nbsp;</div>
@@ -38,16 +42,30 @@
 							<option value="gato">Gato</option>
 							<option value="passaro">Pássaro</option>
 						</select>
+						<div class="col-12">&nbsp;</div>
+
 					</div>
-					<div class="col-sm-12 col-md-6">
+					<div class="col-sm-12 col-md-4">
+						<label>Seu amiguinho tem algum problema de saúde?</label>
+						<select class="js-example-basic-multiple form-control" id="id_label_multiple" name="saude[]" width="100%" multiple="multiple">
+							<option value="Nenhum" selected="">Nenhum</option>
+							<option value="Diabetes">Diabetes</option>
+							<option value="Epilepsia">Epilepsia</option>
+							<option value="Catarata">Cataratas</option>
+							<option value="glaucoma"></option>
+						</select>
+						<div class="col-12">&nbsp;</div>
+
+					</div>
+					<div class="col-sm-12 col-md-2">
 						<label>Sexo</label>
 						<div class="form-check">
 							<input type="radio" id="sexo" name="sexo" class="form-check-input" value="macho">
-							<label for="sexo">Macho</label>
+							<label for="sexo">Macho <i class="fas fa-mars"></i></label> 
 						</div>
 						<div class="form-check">
 							<input type="radio" id="sexo" name="sexo" class="form-check-input" value="femea">
-							<label for="sexo">Fêmea</label>
+							<label for="sexo">Fêmea  <i class="fas fa-venus"></i></label>
 						</div>
 					</div>
 				</div>

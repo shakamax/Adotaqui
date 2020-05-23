@@ -10,6 +10,7 @@
     <script src="js/popper.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="fontawesome/js/all.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js" ></script>
     <script type="text/javascript">
     $(document).ready(function(e) {
 
@@ -22,6 +23,12 @@
        var hf = $('footer').height() + 30;
        $('.conteudo').css({ paddingBottom: hf });
 
+       $('.js-example-basic-multiple').select2();
+
+       $(".js-example-basic-multiple").select2({
+            tags: true,
+            tokenSeparators: [',', ' ']
+        })
     });
     </script>
   </body>
