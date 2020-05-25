@@ -11,7 +11,7 @@
         <h2 class="fonte text-center">Encontre um novo amigo</h2>
         <br>
         <div class="row">
-          <div class="form-group col-6">
+          <div class="form-group col-md-6 col-sm-12">
             <select class="form-control" id="uf" name="uf">
 				<option value="" disabled="" selected="">Estado</option>
 				<option value="AC">Acre</option>
@@ -43,13 +43,13 @@
 			    <option value="TO">Tocantins</option>
 			</select>
           </div>
-          <div class="form-group col-6">
+          <div class="form-group col-md-6 col-sm-12">
             <input type="text" name="cidade" class="form-control" placeholder="Cidade">
           </div>
         </div>
 
         <div class="row">
-          <div class="form-group col-6">
+          <div class="form-group col-md-6 col-sm-12">
             <select class="form-control" id="exampleFormControlSelect1">
               <option selected disabled>Porte</option>
               <option value="Pequeno">Pequeno – De 28 a 35cm. - de 6 a 15kg.</option>
@@ -58,7 +58,7 @@
               <option value="Gigante">Gigante – Acima de 70cm. - de 45 a 60kg.</option>
             </select>
           </div>
-          <div class="form-group col-6">
+          <div class="form-group col-md-6 col-sm-12">
             <select class="form-control" id="exampleFormControlSelect1">
               <option selected disabled>Sexo</option>
               <option value="femea">Fêmea</option>
@@ -68,7 +68,7 @@
         </div>
 
         <div class="row">
-          <div class="form-group col-6">
+          <div class="form-group col-md-6 col-sm-12">
             <select class="form-control" id="exampleFormControlSelect1">
               <option selected disabled>Tipo</option>
               <option value="cachorro">Cachorro</option>
@@ -76,12 +76,14 @@
               <option value="passaro">Pássaro</option>
             </select>
           </div>
-          <div class="form-group col-6">
+          <div class="form-group col-md-6 col-sm-12">
             <input type="text" name="obs" placeholder="Alguma coisa mais específica?" class="form-control">
           </div>
         </div>
         <br>
-        <button type="button" class="btn btn-success btn-gradient-success centro">Procurar</button>
+        <div class="col text-center">
+        	<button type="button" class="btn btn-success btn-gradient-success">Procurar</button>
+        </div>
       </form>
     </div>
   </div>
