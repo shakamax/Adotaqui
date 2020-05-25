@@ -149,6 +149,10 @@ body {
     border-bottom: none;
 }
 
-.js-example-basic-single {
-    height: 70px;
+.showcase:hover {
+    background-color: #8248b67d;
+}
+
+.showcase {
+    margin-bottom: 5px;
 }

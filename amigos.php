@@ -91,10 +91,24 @@
 
   <div class="col-12">&nbsp;</div>
   <div class="col-12">&nbsp;</div>
-  
   <div class="row">
-    <div class="col-sm-3">
-      <div class="card">
+      
+    <div class="col-sm-12 col-md-3">
+      <div class="card showcase">
+        <a href="javascript:void(0)">
+        <img src="img/dog1.jpg" class="card-img-top" alt="Kiara">
+        <div class="card-body">
+          <div class="card-text titulo"><h5>Kiara</h5></div>
+          </a>
+          <div class="card-text subtitulo"><h6><i class="fas fa-building"></i> Brasília - DF</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-mars"></i> Macho</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-dog"></i> Pequeno</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-list"></i> Não possui doenças</h6></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="card showcase">
         <a href="javascript:void(0)">
           <img src="img/dog1.jpg" class="card-img-top" alt="Kiara">
           <div class="card-body">
@@ -107,8 +121,8 @@
         </div>
       </div>
     </div>
-    <div class="col-3">
-      <div class="card">
+    <div class="col-md-3 col-sm-12">
+      <div class="card showcase">
         <a href="javascript:void(0)">
           <img src="img/dog1.jpg" class="card-img-top" alt="Kiara">
           <div class="card-body">
@@ -121,22 +135,8 @@
         </div>
       </div>
     </div>
-    <div class="col-3">
-      <div class="card">
-        <a href="javascript:void(0)">
-          <img src="img/dog1.jpg" class="card-img-top" alt="Kiara">
-          <div class="card-body">
-            <div class="card-text titulo"><h5>Kiara</h5></div>
-          </a>
-          <div class="card-text subtitulo"><h6><i class="fas fa-building"></i> Brasília - DF</h6></div>
-          <div class="card-text subtitulo"><h6><i class="fas fa-mars"></i> Macho</h6></div>
-          <div class="card-text subtitulo"><h6><i class="fas fa-dog"></i> Pequeno</h6></div>
-          <div class="card-text subtitulo"><h6><i class="fas fa-list"></i> Não possui doenças</h6></div>
-        </div>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="card">
+    <div class="col-md-3 col-sm-12">
+      <div class="card showcase">
         <a href="javascript:void(0)">
           <img src="img/dog1.jpg" class="card-img-top cordif" alt="Kiara">
           <div class="card-body">
@@ -150,8 +150,71 @@
       </div>
     </div>
   </div>
-</div>
+  <!-- Fim row -->
+  <div class="col-12">&nbsp;</div>
+  <div class="row">
+    <div class="col-sm-12 col-md-3">
+      <div class="card showcase">
+        <a href="javascript:void(0)">
+        <img src="img/dog1.jpg" class="card-img-top" alt="Kiara">
+        <div class="card-body">
+          <div class="card-text titulo"><h5>Kiara</h5></div>
+          </a>
+          <div class="card-text subtitulo"><h6><i class="fas fa-building"></i> Brasília - DF</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-venus"></i> Macho</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-dog"></i> Pequeno</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-list"></i> Não possui doenças</h6></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="card showcase">
+        <a href="javascript:void(0)">
+          <img src="img/dog1.jpg" class="card-img-top" alt="Kiara">
+          <div class="card-body">
+            <div class="card-text titulo"><h5>Kiara</h5></div>
+          </a>
+          <div class="card-text subtitulo"><h6><i class="fas fa-building"></i> Brasília - DF</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-venus"></i> Macho</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-dog"></i> Pequeno</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-list"></i> Não possui doenças</h6></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="card showcase">
+        <a href="javascript:void(0)">
+          <img src="img/dog1.jpg" class="card-img-top" alt="Kiara">
+          <div class="card-body">
+            <div class="card-text titulo"><h5>Kiara</h5></div>
+          </a>
+          <div class="card-text subtitulo"><h6><i class="fas fa-building"></i> Brasília - DF</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-venus"></i> Macho</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-dog"></i> Pequeno</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-list"></i> Não possui doenças</h6></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="card showcase">
+        <a href="javascript:void(0)">
+          <img src="img/dog1.jpg" class="card-img-top cordif" alt="Kiara">
+          <div class="card-body">
+            <div class="card-text titulo"><h5>Kiara</h5></div>
+          </a>
+          <div class="card-text subtitulo"><h6><i class="fas fa-building"></i> Brasília - DF</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-venus"></i> Macho</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-dog"></i> Pequeno</h6></div>
+          <div class="card-text subtitulo"><h6><i class="fas fa-list"></i> Não possui doenças</h6></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim row -->
 
+
+</div>
+<!-- Fim conteudo -->
 <?php 
 include('layout/footer.php');
 ?>
