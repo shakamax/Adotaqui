@@ -52,6 +52,17 @@ a:hover {
     border: 1px solid green;
 }
 
+.btn-gradient-warning {
+    background-image: linear-gradient(180deg,#f4aa24 10%,#c37f03 100%);
+    color: #fff; 
+}
+
+.btn-gradient-warning:hover {
+    background-image: linear-gradient(180deg,#ffffff 10%,#f5f5f5 100%);    
+    color: #F4AA24; 
+    font-weight: 600;
+}
+
 .cadastrarse {
 	padding-left: 5px;
 }

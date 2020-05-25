@@ -51,6 +51,7 @@
 					<div class="col-sm-12 col-md-6">
 						<label>Estado : </label>
 						<select class="js-example-basic-single form-control" id="uf" name="uf">
+							<option value="">Escolha seu estado</option>
 							<option value="AC">Acre</option>
 						    <option value="AL">Alagoas</option>
 						    <option value="AP">Amapá</option>
@@ -122,27 +123,103 @@
 						</button>
 
 					</div>
+					<div class="col-12">&nbsp;</div>
+					<div class="col-sm-12 text-center">
+						<label>Deseja mudar a sua senha?</label>
+						<div class="col-12">&nbsp;</div>
+						<button class="btn btn-warning btn-gradient-warning" data-toggle="modal" data-target="#modalSenha">Mudar a senha  <i class="far fa-key"></i></button>
+					</div>
 				</div>
 			</form>
-			<div class="modal fade" id="modalEmail" tabindex="-1" role="dialog" aria-labelledby="ModalEmail" aria-hidden="true">
+
+
+			<div class="modal fade" id="modalSenha" tabindex="-1" role="dialog" aria-labelledby="ModalSenha" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-scrollable" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title" id="ModalEmail"></h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<h5 class="modal-title" id="ModalEmail">Mudar o seu e-mail.</h5>
+							<button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
 						<div class="modal-body">
-						...
+							<form class="form-group">
+								<div class="form-row text-center">
+									<div class="col">
+										<label>Digite a sua senha atual</label>
+										<input type="password" name="senhaAtual" class="form-control" required>
+									</div>
+								</div>
+								<div class="col-12">&nbsp;</div>
+								<div class="form-row text-center">
+									<div class="col">
+										<label>Digite sua nova senha</label>
+										<input type="password" name="senha" class="form-control" required>
+									</div>
+								</div>
+								<div class="col-12">&nbsp;</div>
+								<div class="form-row text-center">
+									<div class="col">
+										<label>Confirme a sua senha</label>
+										<input type="password" name="senha2" class="form-control" required="">
+									</div>
+								</div>
+								<div class="col-12">&nbsp;</div>
+
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+							<button type="submit" class="btn btn-success btn-gradient-success">Salvar</button>
+							
+							</form>
+
 						</div>
 					</div>
 				</div>
 			</div>
+
+
+			<div class="modal fade" id="modalEmail" tabindex="-1" role="dialog" aria-labelledby="ModalEmail" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-scrollable" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="ModalEmail">Mudar o seu e-mail.</h5>
+							<button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form class="form-group">
+								<div class="form-row text-center">
+									<div class="col">
+										<label>Seu novo e-mail</label>
+										<input type="email" placeholder="email@email.com" name="email" class="form-control" required>
+									</div>
+								</div>
+								<div class="col-12">&nbsp;</div>
+								<div class="form-row text-center">
+									<div class="col">
+										<label>Confirme seu e-mail</label>
+										<input type="email" name="email2" class="form-control">
+									</div>
+								</div>
+								<div class="col-12">&nbsp;</div>
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+							<button type="submit" class="btn btn-success btn-gradient-success">Salvar</button>
+							
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
 		</div>
 	</div>
 </div>

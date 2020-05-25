@@ -12,6 +12,8 @@
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="fontawesome/js/all.min.js"></script>
     <script type="text/javascript" src="js/select2.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+
     <script type="text/javascript">
     $(document).ready(function(e) {
 
@@ -26,7 +28,6 @@
 
        $('.js-example-basic-multiple').select2();
        $('.js-example-basic-single').select2();
-
        $(".js-example-basic-multiple").select2({
             tags: true,
             tokenSeparators: [',', ' ']
@@ -63,6 +64,8 @@
           $('#btnConta').addClass('selecionado');
           $('.login').show('slow');
         });
+
+        $("#cep").mask("99999-999");
 
         $('#btnDados').click(function() {
           $('.login').hide('slow');
