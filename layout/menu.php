@@ -11,7 +11,7 @@
           <a class="nav-link" href="home.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Nossos amigos</a>
+          <a class="nav-link" href="amigos.php">Nossos amigos</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link" href="#">Pricing</a>

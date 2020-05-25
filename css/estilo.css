@@ -148,3 +148,7 @@ body {
     background-image: linear-gradient(180deg,#a7a7a75c 10%,#b1abab00 100%);
     border-bottom: none;
 }
+
+.js-example-basic-single {
+    height: 70px;
+}

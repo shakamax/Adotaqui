@@ -15,23 +15,39 @@
         <br>
         <div class="row">
           <div class="form-group col-6">
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option selected disabled>Estado</option>
-              <option>DF</option>
-              <option>GO</option>
-              <option>SP</option>
-              <option>RJ</option>
-              <option>...</option>
-            </select>
+            <select class="form-control" id="uf" name="uf">
+        <option value="" disabled="" selected="">Estado</option>
+        <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+      </select>
           </div>
           <div class="form-group col-6">
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option selected disabled>Cidade</option>
-              <option></option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+            <input type="text" name="cidade" class="form-control" placeholder="Cidade">
           </div>
         </div>
 
@@ -47,11 +63,9 @@
           </div>
           <div class="form-group col-6">
             <select class="form-control" id="exampleFormControlSelect1">
-              <option selected disabled>Cidade</option>
-              <option></option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option selected disabled>Sexo</option>
+              <option value="femea">Fêmea</option>
+              <option value="macho">Macho</option>
             </select>
           </div>
         </div>
@@ -59,24 +73,18 @@
         <div class="row">
           <div class="form-group col-6">
             <select class="form-control" id="exampleFormControlSelect1">
-              <option selected disabled>Localização</option>
-              <option>Pequeno</option>
-              <option>Médio</option>
-              <option>Grande</option>
+              <option selected disabled>Tipo</option>
+              <option value="cachorro">Cachorro</option>
+              <option value="gato">Gato</option>
+              <option value="passaro">Pássaro</option>
             </select>
           </div>
           <div class="form-group col-6">
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option selected disabled>Cidade</option>
-              <option></option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+            <input type="text" name="obs" placeholder="Alguma coisa mais específica?" class="form-control">
           </div>
         </div>
         <br>
-        <button type="button" class="btn btn-success centro">Procurar</button>
+        <button type="button" class="btn btn-success btn-gradient-success centro">Procurar</button>
       </form>
     </div>
   </div>
