@@ -6,7 +6,7 @@
 <div class="container conteudo">
 	<div class="card">
 		<div class="card-header pintado text-center">
-			<h2>
+			<h2 class="text-white">
 				Atualizando informações de perfil
 			</h2>
 		</div>
@@ -22,7 +22,7 @@
 					<div class="col-sm-12 col-md-8">
 						<div class="col-12">
 							<label for="nome">Nome : </label>
-							<input type="text" placeholder="João Machado" name="nome" class="form-control">
+							<input id="nome" type="text" placeholder="João Machado" name="nome" class="form-control">
 						</div>
 						<div class="col-12">&nbsp;</div>
 						<div class="col-12">
@@ -104,7 +104,7 @@
 				</div>
 				<div class="form-row">
 					<div class="col-12 text-center">
-						<button class="btn btn-success btn-gradient-success">Salvar mudanças</button>
+						<button class="btn btn-success btn-gradient-success col-6">Salvar mudanças</button>
 						
 					</div>
 				</div>
@@ -114,20 +114,20 @@
 				<div class="form-row">
 					<div class="col-sm-12 text-center">
 						<label>Email</label>
-						<input type="email" name="email" value="seuemail@email.com" disabled="" class="form-control">
+						<input type="email" name="email" value="seuemail@email.com" disabled="" class="form-control text-center">
 					</div>
 					<div class="col-12">&nbsp;</div>
 					<div class="col-sm-12 text-center">
-						<button type="button" class="btn btn-success btn-gradient-success" data-toggle="modal" data-target="#modalEmail">
+						<button type="button" class="btn btn-success btn-gradient-success col-6" data-toggle="modal" data-target="#modalEmail">
 						  Mudar e-mail
 						</button>
 
 					</div>
 					<div class="col-12">&nbsp;</div>
 					<div class="col-sm-12 text-center">
-						<label>Deseja mudar a sua senha?</label>
+						<label>OU</label>
 						<div class="col-12">&nbsp;</div>
-						<button type="button" class="btn btn-warning btn-gradient-warning" data-toggle="modal" data-target="#modalSenha">Mudar a senha  <i class="far fa-key"></i></button>
+						<button type="button" class="btn btn-warning btn-gradient-warning col-6" data-toggle="modal" data-target="#modalSenha">Mudar a senha  <i class="far fa-key"></i></button>
 					</div>
 				</div>
 			</form>
@@ -229,3 +229,11 @@
 <?php 
   include('layout/footer.php');
  ?>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
+	$('#nome').focus();	
+});
+</script>

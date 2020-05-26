@@ -11,7 +11,7 @@
   <div class="card card1 pintado">
     <div class="card-body">
       <form>
-        <h2 class="fonte text-center">Encontre um novo amigo</h2>
+        <h2 class="fonte text-center text-white">Encontre um novo amigo</h2>
         <br>
         <div class="row">
           <div class="form-group col-md-6 col-sm-12">
@@ -85,7 +85,7 @@
         </div>
         <br>
         <div class="col text-center">
-          <button type="button" class="btn btn-success btn-gradient-success">Procurar</button>
+          <button type="button" class="btn btn-success btn-gradient-success col-6">Procurar</button>
         </div>
       </form>
     </div>

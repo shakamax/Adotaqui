@@ -6,7 +6,7 @@
 <div class="container conteudo">
 	<div class="card">
 		<div class="card-header pintado text-center">
-			<h2>
+			<h2 class="text-white">
 				Cadastre seu amigo
 			</h2>
 		</div>
@@ -86,9 +86,10 @@
 						</div>
 					</div>
 				</div>
+				<P>&nbsp;</P>
 				<div class="form-row">
 					<div class="col-12 text-center">
-						<button type="submit" class="btn btn-success btn-gradient-success">Cadastrar</button>
+						<button type="submit" class="btn btn-success btn-gradient-success col-6">Cadastrar</button>
 					</div>	
 				</div>
 			</form>
@@ -99,3 +100,9 @@
 <?php 
   include('layout/footer.php');
  ?>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("html, body").animate({ scrollTop: $(document).height()-$(window).height() });	
+});
+</script>
