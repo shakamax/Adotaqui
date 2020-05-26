@@ -113,12 +113,13 @@
           </div>
           <div class="col-12 borda">&nbsp;</div>
 
-        </form>
         
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Agora não</button>
         <button type="submit" class="btn btn-primary btn-gradient-success">Login</button>
+        </form>
+        
       </div>
     </div>
   </div>
