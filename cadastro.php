@@ -79,7 +79,7 @@
 					<div class="col-sm-12 col-md-6 text-center">
 						<img src="img/dog.jpg" class="img-fluid avatar">
 						<div class="dflex justify-content-center">
-							<div class="btn btn-gradient-success btn-rounded">
+							<div class="btn btn-success btn-gradient-success btn-rounded">
 								 <input class="custom-file-input form-control-file" type="file" id="avatar"><span>Adicionar foto</span> </input>
 								
 							</div>

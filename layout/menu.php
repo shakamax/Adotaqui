@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <div class="container-fluid">
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top background-purple navbar-header">
@@ -13,6 +14,15 @@
         <li class="nav-item">
           <a class="nav-link" href="amigos.php">Nossos amigos</a>
         </li>
+        <?php 
+          if(isset($_SESSION['login']) && $_SESSION['login'] == true){
+        ?>
+        <li class="nav-item">
+          <a class="nav-link" href="cadastro.php">Cadastrar um amigo</a>
+        </li>
+        <?php 
+          } ;
+        ?>
         <!-- <li class="nav-item">
           <a class="nav-link" href="#">Pricing</a>
         </li>
@@ -35,7 +45,19 @@
       <div>
         &nbsp;
       </div>
+      <?php 
+          if(isset($_SESSION['login']) && $_SESSION['login'] == true){
+      ?>
+
+      <a class="nav-item linkmodal" data-toggle="modal" data-target="#modalUser" style="color: #f8ffff;">Fernando Veríssimo &nbsp;<img class="img-fluid img-profile rounded-circle" src="img/verissimo.jpg"></a>
+
+      <?php 
+          } else {
+      ?>
+
       <a class="nav-item linkmodal" data-toggle="modal" data-target="#exampleModalCenter" style="color: #f8ffff;">Visitante <img class="img-fluid img-profile rounded-circle" src="img/user.png"></a>
+
+      <?php } ; ?>
     </div>
   </nav>  
 </div>
@@ -50,7 +72,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form method="get" class="form-group">
+        <form method="post" action="login.php" class="form-group">
           <div class="col-12 text-center borda"> <h2>Adotaqui! <i class="fas fa-paw"></i></h2></div>
           <div class="col-12">&nbsp;</div>
           <div class="col-12 text-center">
@@ -66,13 +88,13 @@
           <div class="col-12 text-center"> OU </div>
           <div class="row">
             <div class="col text-center">
-              <a href="#" class="entrarsocial">
+              <a href="login.php" class="entrarsocial">
                 <img src="img/face.svg" class="img-fluid socialicon">
                 <div class="col-12">Entre com o Facebook</div>
               </a>
             </div> 
             <div class="col text-center">
-              <a href="#" class="entrarsocial">
+              <a href="login.php" class="entrarsocial">
                 <img src="img/gmail.svg" class="img-fluid socialicon">
                 <div class="col-12">Entre com o Gmail</div>
               </a>
@@ -84,20 +106,77 @@
 
           <div class="col-12">
             <div class="row">
-              <p class="cadastrarse">Não tem conta? &nbsp;<h6><a href="index.html">Cadastrar-se</a></h6></p>
+              <div class="col text-center">
+                <p class="cadastrarse"><h6><a href="index.html">Cadastrar-se</a></h6></p>
+              </div>
             </div>
           </div>
           <div class="col-12 borda">&nbsp;</div>
 
-
-
-
         </form>
+        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Agora não</button>
-        <button type="button" class="btn btn-primary btn-gradient-success">Login</button>
+        <button type="submit" class="btn btn-primary btn-gradient-success">Login</button>
       </div>
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="modalUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header background-purple">
+        <div class="col text-center">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Olá Fernando</h5>
+        </div>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-12 text-center borda"> <h2>Adotaqui! <i class="fas fa-paw"></i></h2></div>
+        <div class="col-12">&nbsp;</div>
+        <div class="col-12 text-center">
+          <img src="img/verissimo.jpg" class="img-fluid rounded-circle foto">
+        </div>
+        <div class="col-12">&nbsp;</div>
+        <div class="col-12 text-center">
+          <a href="perfil.php" class="entrarsocial">
+            Atualizar perfil
+            <br>
+            <i class="fal fa-user-cog fa-2x linkfont"></i>
+          </a>
+        </div>
+        <div class="col-12">&nbsp;</div>
+        <div class="col-12">&nbsp;</div>
+
+        <div class="col-12 text-center">
+          <a href="cadastro.php" class="entrarsocial">
+            Cadastrar um amigo
+            <br>
+            <i class="fal fa-dog fa-2x"></i>
+          </a>
+        </div>
+        <div class="col-12">&nbsp;</div>
+        <div class="col-12">&nbsp;</div>
+        <div class="col-12 text-center">
+          <a href="logout.php" class="entrarsocial text-danger">
+            Logout
+            <br>
+            <i class="fal fa-sign-out-alt fa-2x"></i>
+          </a>
+        </div>
+
+        <div class="col-12 borda">&nbsp;</div>
+      </div>
+      <div class="modal-footer text-center">
+        <div class="col">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

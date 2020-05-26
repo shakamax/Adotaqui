@@ -67,6 +67,12 @@
 
         $("#cep").mask("99999-999");
 
+        /*$(".buttonaim").hover(function(){
+          $(this).css("color", "#0ec9c3b5");
+          }, function(){
+          $(this).css("color", "#0ec9c32e");
+        });*/    
+
         $('#btnDados').click(function() {
           $('.login').hide('slow');
           $('#btnConta').removeClass('selecionado');

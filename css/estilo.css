@@ -156,3 +156,13 @@ body {
 .showcase {
     margin-bottom: 5px;
 }
+
+.foto {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.btn-secondary:hover {
+    color: #6c757d;
+    background-color: #fff; 
+}
