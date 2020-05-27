@@ -170,3 +170,9 @@ body {
 .dest {
     font-size: large;
 }
+
+.cardoso{
+    padding-left: 35%;
+    position: absolute;
+    margin-bottom: 25%;
+}
