@@ -44,41 +44,60 @@
 					</div>
 				</div>
 				<div class="form-row">
+					<div class="col-sm-12 col-md-4">
+						<div class="col-12">&nbsp;</div>
+						<label>Celular : </label>
+						<input type="text" placeholder="(99) 9 9999-9999" name="celular" class="form-control telefone">
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="col-12">&nbsp;</div>
+						<label>Telefone fixo : </label>
+						<input type="text" placeholder="(99) 9999-9999" name="fixo" class="form-control fixo">
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="col-12">&nbsp;</div>
+						<label>CPF : </label>
+						<input type="text" placeholder="999.999.999-99" name="fixo" class="form-control cpf">
+					</div>
+				</div>	
+				<div class="form-row">
 					<div class="col-sm-12 col-md-6">
-						<label>CEP</label>
+						<div class="col-12">&nbsp;</div>
+						<label>CEP : </label>
 						<input type="text" id="cep" name="cep" class="form-control">
 					</div>
 					<div class="col-sm-12 col-md-6">
+						<div class="col-12">&nbsp;</div>
 						<label>Estado : </label>
-						<select class="js-example-basic-single form-control" id="uf" name="uf">
+						<select class="form-control" id="uf">
 							<option value="">Escolha seu estado</option>
-							<option value="AC">Acre</option>
-						    <option value="AL">Alagoas</option>
-						    <option value="AP">Amapá</option>
-						    <option value="AM">Amazonas</option>
-						    <option value="BA">Bahia</option>
-						    <option value="CE">Ceará</option>
-						    <option value="DF">Distrito Federal</option>
-						    <option value="ES">Espírito Santo</option>
-						    <option value="GO">Goiás</option>
-						    <option value="MA">Maranhão</option>
-						    <option value="MT">Mato Grosso</option>
-						    <option value="MS">Mato Grosso do Sul</option>
-						    <option value="MG">Minas Gerais</option>
-						    <option value="PA">Pará</option>
-						    <option value="PB">Paraíba</option>
-						    <option value="PR">Paraná</option>
-						    <option value="PE">Pernambuco</option>
-						    <option value="PI">Piauí</option>
-						    <option value="RJ">Rio de Janeiro</option>
-						    <option value="RN">Rio Grande do Norte</option>
-						    <option value="RS">Rio Grande do Sul</option>
-						    <option value="RO">Rondônia</option>
-						    <option value="RR">Roraima</option>
-						    <option value="SC">Santa Catarina</option>
-						    <option value="SP">São Paulo</option>
-						    <option value="SE">Sergipe</option>
-						    <option value="TO">Tocantins</option>
+							<option id="AC" value="AC">Acre</option>
+						    <option id="AL" value="AL">Alagoas</option>
+						    <option id="AP" value="AP">Amapá</option>
+						    <option id="AM" value="AM">Amazonas</option>
+						    <option id="BA" value="BA">Bahia</option>
+						    <option id="CE" value="CE">Ceará</option>
+						    <option id="DF" value="DF">Distrito Federal</option>
+						    <option id="ES" value="ES">Espírito Santo</option>
+						    <option id="GO" value="GO">Goiás</option>
+						    <option id="MA" value="MA">Maranhão</option>
+						    <option id="MT" value="MT">Mato Grosso</option>
+						    <option id="MS" value="MS">Mato Grosso do Sul</option>
+						    <option id="MG" value="MG">Minas Gerais</option>
+						    <option id="PA" value="PA">Pará</option>
+						    <option id="PB" value="PB">Paraíba</option>
+						    <option id="PR" value="PR">Paraná</option>
+						    <option id="PE" value="PE">Pernambuco</option>
+						    <option id="PI" value="PI">Piauí</option>
+						    <option id="RJ" value="RJ">Rio de Janeiro</option>
+						    <option id="RN" value="RN">Rio Grande do Norte</option>
+						    <option id="RS" value="RS">Rio Grande do Sul</option>
+						    <option id="RO" value="RO">Rondônia</option>
+						    <option id="RR" value="RR">Roraima</option>
+						    <option id="SC" value="SC">Santa Catarina</option>
+						    <option id="SP" value="SP">São Paulo</option>
+						    <option id="SE" value="SE">Sergipe</option>
+						    <option id="TO" value="TO">Tocantins</option>
 						</select>
 						<div class="col-sm-12">&nbsp;</div>
 
@@ -93,15 +112,18 @@
 				</div>
 				<div class="form-row">
 					<div class="col-sm-12 col-md-6">
+						<div class="col-sm-12">&nbsp;</div>
 						<label>Cidade : </label>
 						<input type="text" id="localidade" name="cidade" class="form-control">
-						<div class="col-sm-12">&nbsp;</div>
 					</div>
 					<div class="col-sm-12 col-md-6">
+						<div class="col-sm-12">&nbsp;</div>
 						<label>bairro</label>
 						<input type="text" id="bairro" name="bairro" class="form-control">
 					</div>
 				</div>
+				<div class="col-sm-12">&nbsp;</div>
+
 				<div class="form-row">
 					<div class="col-12 text-center">
 						<button class="btn btn-success btn-gradient-success col-6">Salvar mudanças</button>

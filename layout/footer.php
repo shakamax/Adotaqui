@@ -53,14 +53,14 @@
                     $('#logradouro').val("...");
                     $('#bairro').val("...");
                     $('#localidade').val("...");
-                    $('#uf').val("...");
+                    
                 },
                 success: function (data) {
                     $('#logradouro').val(data.logradouro);
                     $('#bairro').val(data.bairro);
                     $('#localidade').val(data.localidade);
                     $("#uf option").filter(function() {
-                      return this.val() == data.uf; 
+                      return $(this).attr('id') == data.uf;
                     }).attr('selected', true);
                 }
             });
@@ -78,6 +78,11 @@
         });
 
         $("#cep").mask("99999-999");
+        $(".telefone").mask("(99) 9 9999-9999");
+        $(".fixo").mask("(61) 9999-9999");
+        $(".cpf").mask("999.999.999-99");
+
+
 
         /*$(".buttonaim").hover(function(){
           $(this).css("color", "#0ec9c3b5");

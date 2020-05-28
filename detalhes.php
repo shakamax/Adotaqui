@@ -33,7 +33,7 @@ include('layout/menu.php');
 		<div class="col-md-4 col-sm-12">
 			<div class="col-12">&nbsp;</div>
 			<div id="card1" class="card cardSelect">
-				<h5 class="card-header background-purple">Zeus - Cachorro</h5> <!-- Nome do animal & Tipo-->
+				<h5 class="card-header pintado text-white">Zeus - Cachorro</h5> <!-- Nome do animal & Tipo-->
 				<div class="card-body">
 					<h5>Dados gerais&nbsp; <i class="fas fa-arrow-down"></i></h5>
 					<!-- <h5 class="card-title">Husky Siberiano</h5>  Raça do animal -->
@@ -57,7 +57,7 @@ include('layout/menu.php');
 		<div class="col-md-4 col-sm-12">
 			<div class="col-12">&nbsp;</div>
 			<div id="card2" class="card cardSelect">
-				<h5 class="card-header pintado text-white">Quer adotar esse bichano?</h5>
+				<h5 class="card-header pintado text-white text-center">Quer adotar esse bichano?</h5>
 				<div class="card-body text-center">
 					<h5 class="card-title">Alexandre é o responsável por ele.</h5>
 					<h6>Dados do Alexandre <i class="fas fa-arrow-down"></i></h6>
