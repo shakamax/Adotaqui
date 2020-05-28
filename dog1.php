@@ -4,20 +4,19 @@ include('layout/menu.php');
 ?>
 
 
-<div class="row">
-	<div class="col-3">
-		<div class="" style="padding-left: 10%; padding-top: 30%; width: 400px;">
-
-			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div class="container-fluid conteudo">
+	<div class="row">
+		<div class="col-md-3 col-sm-12">
+			<div id="carouselExampleControls" class="carousel slide fotosSlide" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="img/dogs/dog1.jpg" class="d-block" alt="..." style="height: 500px; width: 400px;">
+						<img src="img/dogs/dog1.jpg" class="d-block" alt="...">
 					</div>
 					<div class="carousel-item">
-						<img src="img/dogs/dog2.jpg" class="d-block" alt="..." style="height: 500px; width: 400px;">
+						<img src="img/dogs/dog2.jpg" class="d-block" alt="...">
 					</div>
 					<div class="carousel-item">
-						<img src="img/dogs/dog3.jpg" class="d-block" alt="..." style="height: 500px; width: 400px;">
+						<img src="img/dogs/dog3.jpg" class="d-block" alt="...">
 					</div>
 				</div>
 				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -30,52 +29,53 @@ include('layout/menu.php');
 				</a>
 			</div>
 		</div>
-	</div>
 
-	<div class="col-4">
-		<div class="" style="padding-left: 5%; padding-top: 72%;">
-			<div class="card">
-				<h5 class="card-header">Zeus - Cachorro</h5> <!-- Nome do animal & Tipo-->
+		<div class="col-md-4 col-sm-12">
+			<div class="col-12">&nbsp;</div>
+			<div id="card1" class="card cardSelect">
+				<h5 class="card-header background-purple">Zeus - Cachorro</h5> <!-- Nome do animal & Tipo-->
 				<div class="card-body">
-					<h5 class="card-title">Husky Siberiano</h5> <!-- Raça do animal -->
-					<h6>Dados gerais&nbsp; <i class="fas fa-arrow-down"></i></h6>
+					<h5>Dados gerais&nbsp; <i class="fas fa-arrow-down"></i></h5>
+					<!-- <h5 class="card-title">Husky Siberiano</h5>  Raça do animal -->
 					<p class="card-text">
-					<strong>Sexo:</strong> Masculino
-						<br>
-					<strong>Porte:</strong> Médio
-					<br>
-					<strong>Possui algum problema de saúde?</strong> Não
-					<br>
-					<strong>Descrição:</strong> Muito brincalhão, bagunceiro, companheiro e feliz.
+						<strong>Sexo:</strong> Macho <i class="fas fa-mars"></i>
+					</p>
+					<p class="card-text">
+						<strong>Porte:</strong> Médio
+					</p>
+					<p class="card-text">
+						<strong>Possui algum problema de saúde?</strong> Nenhum
+					</p>
+					<p class="card-text">
+						<strong>Descrição:</strong> Muito brincalhão, bagunceiro, companheiro e feliz.
 					</p>
 				</div>
 			</div>
+
 		</div>
 
-	</div>
-
-	<div class="col-4">
-		<div style="width: 95%; padding-left: 1%; padding-top: 72%;">
-			<div class="card">
-				<h5 class="card-header">Quer adotar esse bichano?</h5>
-				<div class="card-body">
+		<div class="col-md-4 col-sm-12">
+			<div class="col-12">&nbsp;</div>
+			<div id="card2" class="card cardSelect">
+				<h5 class="card-header pintado text-white">Quer adotar esse bichano?</h5>
+				<div class="card-body text-center">
 					<h5 class="card-title">Alexandre é o responsável por ele.</h5>
-					<h6>Dados do Alexandre</h6>
+					<h6>Dados do Alexandre <i class="fas fa-arrow-down"></i></h6>
 					<p class="card-text">
-					<strong>Telefone:</strong> (61) 9 9321-1234
-						<br>
-					<strong>Cidade/Estado:</strong> Brasília - DF
-					<br>
+						<strong>Telefone:</strong> (61) 9 9321-1234
 					</p>
-					<a href="javascript:void(0)" class="btn btn-success">Quero adotar!</a>
+					<p>
+						<strong>Cidade/Estado:</strong> Brasília - DF
+					</p>
+						<a href="javascript:void(0)" class="btn btn-success btn-gradient-success">Quero adotar!</a>
 				</div>
 			</div>
+
 		</div>
 
 	</div>
 
 </div>
-
 
 <?php 
 include('layout/footer.php');

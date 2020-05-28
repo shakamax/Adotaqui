@@ -176,3 +176,23 @@ body {
     position: absolute;
     margin-bottom: 25%;
 }
+
+.carousel-item img {
+    height: 500px;
+    width: 400px;
+}
+
+.conteudo .fotosSlide {
+    position: relative;
+    margin-top: -13vw;
+}
+
+.cardSelect {
+    background-color: #b3a9bb47;
+}
+
+.cardSelect:hover {
+    background-color: #f7f7f7;
+}
+
+/*style="padding-left: 10%; padding-top: 30%; width: 400px;"*/

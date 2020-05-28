@@ -22,9 +22,19 @@
        var h = $('nav').height() + 290;
        //depois eu coloco na classe conteudo como paddingtop.
        $('.conteudo').css({ paddingTop: h });
+
+       //$('.fotosSlide').css({ paddingTop: -80 });
        //tudo isso assim que a pagina carrega
        var hf = $('footer').height() + 30;
        $('.conteudo').css({ paddingBottom: hf });
+
+       var h1 = $('#card1').height();
+       var h2 = $('#card2').height();
+       if (h1 > h2) {
+        $('#card2').css({ height: h1 });
+       } else if(h2 > h1) {
+        $('#card1').css({ height: h2 });
+       }
 
        $('.js-example-basic-multiple').select2();
        $('.js-example-basic-single').select2();
