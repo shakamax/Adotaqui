@@ -52,7 +52,7 @@
 							<option value="Diabetes">Diabetes</option>
 							<option value="Epilepsia">Epilepsia</option>
 							<option value="Catarata">Cataratas</option>
-							<option value="glaucoma"></option>
+							<option value="glaucoma">Glaucoma</option>
 						</select>
 						<div class="col-12">&nbsp;</div>
 

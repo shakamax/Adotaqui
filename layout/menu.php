@@ -20,6 +20,9 @@
         <li class="nav-item">
           <a class="nav-link text-white" href="cadastro.php">Cadastrar um amigo</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="paraAdocao.php">Amigos cadastrados</a>
+        </li>
         <?php 
           } ;
         ?>

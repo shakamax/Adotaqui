@@ -82,7 +82,31 @@
         $(".fixo").mask("(61) 9999-9999");
         $(".cpf").mask("999.999.999-99");
 
+        $('#btnExcluirKiara').click(function(){
+          $('#cardKiara').hide('slow');
+          $('.alert').show();
+          setTimeout(function(){
+            $('.alert').fadeOut(2500);
+          }, 5000);
+        });
 
+        $('#btnExcluirPiui').click(function(){
+          $('#cardPiui').hide('slow');
+          $('.alert').show();
+          setTimeout(function(){
+            $('.alert').fadeOut(2500);
+          }, 5000);
+        });
+
+        $('#btnExcluirSergio').click(function(){
+          $('#cardSergio').hide('slow');
+          $('.alert').show();
+          setTimeout(function(){
+            $('.alert').fadeOut(2500);
+          }, 5000);
+        });
+
+        
 
         /*$(".buttonaim").hover(function(){
           $(this).css("color", "#0ec9c3b5");

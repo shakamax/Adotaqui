@@ -80,6 +80,10 @@ a:hover {
     background-color: #F4AA24;
 }
 
+.text-yellow {
+    color: #F4AA24;   
+}
+
 .fonte {
     font-family: sans-serif;
 }
@@ -193,6 +197,16 @@ body {
 
 .cardSelect:hover {
     background-color: #f7f7f7;
+}
+
+.cardtop {
+    width: 257px;
+    height: 196px;
+}
+
+.cardDetail img {
+    width: 257px;
+    height: 196px;
 }
 
 /*style="padding-left: 10%; padding-top: 30%; width: 400px;"*/

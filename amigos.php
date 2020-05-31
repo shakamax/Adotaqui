@@ -97,7 +97,7 @@
       
     <div class="col-sm-12 col-md-3">
       <div class="card showcase">
-        <a href="javascript:void(0)">
+        <a href="detalhes.php">
         <img src="img/dog1.jpg" class="card-img-top" alt="Kiara">
         <div class="card-body">
           <div class="card-text titulo"><h5>Kiara</h5></div>
@@ -111,7 +111,7 @@
     </div>
     <div class="col-md-3 col-sm-12">
       <div class="card showcase">
-        <a href="javascript:void(0)">
+        <a href="detalhes.php">
           <img src="img/dog1.jpg" class="card-img-top" alt="Kiara">
           <div class="card-body">
             <div class="card-text titulo"><h5>Kiara</h5></div>
@@ -125,7 +125,7 @@
     </div>
     <div class="col-md-3 col-sm-12">
       <div class="card showcase">
-        <a href="javascript:void(0)">
+        <a href="detalhes.php">
           <img src="img/dog1.jpg" class="card-img-top" alt="Kiara">
           <div class="card-body">
             <div class="card-text titulo"><h5>Kiara</h5></div>
@@ -139,7 +139,7 @@
     </div>
     <div class="col-md-3 col-sm-12">
       <div class="card showcase">
-        <a href="javascript:void(0)">
+        <a href="detalhes.php">
           <img src="img/dog1.jpg" class="card-img-top cordif" alt="Kiara">
           <div class="card-body">
             <div class="card-text titulo"><h5>Kiara</h5></div>
@@ -157,7 +157,7 @@
   <div class="row">
     <div class="col-sm-12 col-md-3">
       <div class="card showcase">
-        <a href="javascript:void(0)">
+        <a href="detalhes.php">
         <img src="img/dog1.jpg" class="card-img-top" alt="Kiara">
         <div class="card-body">
           <div class="card-text titulo"><h5>Kiara</h5></div>
@@ -171,7 +171,7 @@
     </div>
     <div class="col-md-3 col-sm-12">
       <div class="card showcase">
-        <a href="javascript:void(0)">
+        <a href="detalhes.php">
           <img src="img/dog1.jpg" class="card-img-top" alt="Kiara">
           <div class="card-body">
             <div class="card-text titulo"><h5>Kiara</h5></div>
@@ -185,7 +185,7 @@
     </div>
     <div class="col-md-3 col-sm-12">
       <div class="card showcase">
-        <a href="javascript:void(0)">
+        <a href="detalhes.php">
           <img src="img/dog1.jpg" class="card-img-top" alt="Kiara">
           <div class="card-body">
             <div class="card-text titulo"><h5>Kiara</h5></div>
@@ -199,7 +199,7 @@
     </div>
     <div class="col-md-3 col-sm-12">
       <div class="card showcase">
-        <a href="javascript:void(0)">
+        <a href="detalhes.php">
           <img src="img/dog1.jpg" class="card-img-top cordif" alt="Kiara">
           <div class="card-body">
             <div class="card-text titulo"><h5>Kiara</h5></div>

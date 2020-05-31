@@ -67,7 +67,7 @@ include('layout/menu.php');
 					<p>
 						<strong>Cidade/Estado:</strong> Brasília - DF
 					</p>
-						<a href="javascript:void(0)" class="btn btn-success btn-gradient-success">Quero adotar!</a>
+						<a href="javascript:void(0)" class="btn btn-success btn-gradient-success col-6">Quero adotar!</a>
 				</div>
 			</div>
 
