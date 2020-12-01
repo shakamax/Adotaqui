@@ -110,7 +110,7 @@
           <div class="col-12">
             <div class="row">
               <div class="col text-center">
-                <p class="cadastrarse"><h6><a href="index.html">Cadastrar-se</a></h6></p>
+                <p class="cadastrarse"><h6><a href="cadastrarse.php">Cadastrar-se</a></h6></p>
               </div>
             </div>
           </div>

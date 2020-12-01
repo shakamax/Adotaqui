@@ -3,6 +3,10 @@
     color: #f8ffff;
 }
 
+.bg-pur {
+    background-color: #fcfcff;
+}
+
 .navbar-brand {
     font-weight: 900;
 }
@@ -115,9 +119,9 @@ a {
 
 body {
     background-image: url('../img/img1.jpg');
-    background-size: 100%;
     background-repeat: no-repeat;
     background-position: top; 
+    background-size: 100%;
 }
 
 .form-control-file {
