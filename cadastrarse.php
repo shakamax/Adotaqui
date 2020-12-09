@@ -4,7 +4,13 @@
 
  ?>
 
+  
 <div class="container conteudo">
+<?php if (isset($_GET['msg'])&& isset($_GET['tipo'])) { ?>
+  <div class="alert <?php echo $_GET['tipo']; ?>">
+    <?php echo $_GET['msg'] ?>
+  </div>
+<?php } ?>
   <div class="card">
     <div class="card-header pintado text-center">
       <h2 class="text-white">
@@ -12,18 +18,19 @@
       </h2>
     </div>
     <div class="card-body">
-      <form class="form-group">
+      <form class="form-group" onsubmit="return validarSenha()" method="POST" action="db/userdb.php">
         <div class="form-row">
           <div class="col-12 text-center">
             <label for="nome"><strong>Nome</strong></label>
-            <input type="text" placeholder="Ex : Fulano da silva" name="nome" class="form-control">
+            <input required type="text" placeholder="Ex : Fulano da silva" name="nome" class="form-control">
+            <input type="hidden" name="acao" value="cadastrar">
           </div>
         </div>
         <div class="col-12">&nbsp;</div>
         <div class="form-row">
           <div class="col-12 text-center">
             <label for="email"><strong>E-mail</strong></label>
-            <input type="email" placeholder="Ex : email@email.com" name="email" class="form-control">
+            <input required type="email" placeholder="Ex : email@email.com" name="email" class="form-control">
           </div>
         </div>
         <div class="col-12">&nbsp;</div>
@@ -31,7 +38,7 @@
         <div class="form-row">
           <div class="col-12 text-center">
             <label for="senha"><strong>Digite uma senha</strong></label>
-            <input type="password" name="senha" class="form-control">
+            <input required type="password" id="senha" name="senha" class="form-control">
           </div>
         </div>
         <div class="col-12">&nbsp;</div>
@@ -39,7 +46,7 @@
         <div class="form-row">
           <div class="col-12 text-center">
             <label for="senha"><strong>Confirme sua senha</strong></label>
-            <input type="password" name="senha" class="form-control">
+            <input required type="password" id="confirmaSenha" name="senha2" class="form-control">
           </div>
         </div>
         <div class="col-12">&nbsp;</div>
@@ -64,7 +71,7 @@
               </button>
             </div>
             <div class="modal-body">
-              <form class="form-group">
+              <form class="form-group" >
                 <div class="form-row text-center">
                   <div class="col">
                     <label>Digite a sua senha atual</label>

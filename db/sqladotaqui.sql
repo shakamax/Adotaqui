@@ -44,15 +44,15 @@ CREATE TABLE IF NOT EXISTS `adotaqui`.`animal` (
   `nome` VARCHAR(45) NOT NULL,
   `adotado` TINYINT NOT NULL DEFAULT 0,
   `cancelado` TINYINT NOT NULL DEFAULT 0,
-  `usuario_idusuario` INT NOT NULL,
+  `fkusuario` INT NOT NULL,
   `porte` VARCHAR(45) NULL,
   `sexo` VARCHAR(45) NULL,
   `tipo` VARCHAR(45) NULL,
   `sobre` LONGTEXT NULL,
   PRIMARY KEY (`idanimal`),
-  INDEX `fk_amigo_usuario1_idx` (`usuario_idusuario` ASC),
+  INDEX `fk_amigo_usuario1_idx` (`fkusuario` ASC),
   CONSTRAINT `fk_amigo_usuario1`
-    FOREIGN KEY (`usuario_idusuario`)
+    FOREIGN KEY (`fkusuario`)
     REFERENCES `adotaqui`.`usuario` (`idusuario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -73,17 +73,17 @@ ENGINE = InnoDB;
 -- Table `adotaqui`.`amigoSaude`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `adotaqui`.`amigoSaude` (
-  `amigo_idamigo` INT NOT NULL,
-  `problemaSaude_idProblema` INT NOT NULL,
-  INDEX `fk_amigo_has_problemaSaude_problemaSaude1_idx` (`problemaSaude_idProblema` ASC),
-  INDEX `fk_amigo_has_problemaSaude_amigo_idx` (`amigo_idamigo` ASC),
+  `fkanimal` INT NOT NULL,
+  `fkproblema` INT NOT NULL,
+  INDEX `fk_amigo_has_problemaSaude_problemaSaude1_idx` (`fkproblema` ASC),
+  INDEX `fk_amigo_has_problemaSaude_amigo_idx` (`fkanimal` ASC),
   CONSTRAINT `fk_amigo_has_problemaSaude_amigo`
-    FOREIGN KEY (`amigo_idamigo`)
+    FOREIGN KEY (`fkanimal`)
     REFERENCES `adotaqui`.`animal` (`idanimal`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_amigo_has_problemaSaude_problemaSaude1`
-    FOREIGN KEY (`problemaSaude_idProblema`)
+    FOREIGN KEY (`fkproblema`)
     REFERENCES `adotaqui`.`problemaSaude` (`idProblema`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -96,26 +96,12 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `adotaqui`.`fotos` (
   `idfotos` INT NOT NULL AUTO_INCREMENT,
   `foto` BLOB NOT NULL,
-  PRIMARY KEY (`idfotos`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `adotaqui`.`amigo_has_fotos`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `adotaqui`.`amigo_has_fotos` (
-  `amigo_idamigo` INT NOT NULL,
-  `fotos_idfotos` INT NOT NULL,
-  INDEX `fk_amigo_has_fotos_fotos1_idx` (`fotos_idfotos` ASC),
-  INDEX `fk_amigo_has_fotos_amigo1_idx` (`amigo_idamigo` ASC),
-  CONSTRAINT `fk_amigo_has_fotos_amigo1`
-    FOREIGN KEY (`amigo_idamigo`)
+  `animal_idanimal` INT NOT NULL,
+  PRIMARY KEY (`idfotos`),
+  INDEX `fk_fotos_animal1_idx` (`animal_idanimal` ASC),
+  CONSTRAINT `fk_fotos_animal1`
+    FOREIGN KEY (`animal_idanimal`)
     REFERENCES `adotaqui`.`animal` (`idanimal`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_amigo_has_fotos_fotos1`
-    FOREIGN KEY (`fotos_idfotos`)
-    REFERENCES `adotaqui`.`fotos` (`idfotos`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;

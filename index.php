@@ -5,6 +5,11 @@
  ?>
 
 <div class="container conteudo">
+  <?php if (isset($_GET['msg'])&& isset($_GET['tipo'])) { ?>
+  <div class="alert <?php echo $_GET['tipo']; ?>">
+    <?php echo $_GET['msg'] ?>
+  </div>
+  <?php } ?>
   <div class="card card1 pintado">
     <div class="card-body">
       <form>

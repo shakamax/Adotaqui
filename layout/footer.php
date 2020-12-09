@@ -124,6 +124,34 @@
         });
        
     });
+
+
+    function validarSenha() {
+        var senha = $('#senha').val();;
+        var senha2 = $('#confirmaSenha').val();;
+        
+        if(senha == "" || senha.length < 5){
+            alert('Senha deve conter pelo menos 5 caracteres.');
+            $('#senha').focus();
+            return false;
+        }
+        if(senha2 == "" || senha2.length < 5){
+            alert('Senha deve conter pelo menos 5 caracteres.');
+            $('#confirmaSenha').focus();
+            return false;
+        }
+        if(senha != senha2){
+            alert('Senhas estão diferentes, por favor verifique sua senha.');
+            $('#confirmaSenha').focus();
+            return false;
+        }
+     }
+
+     setTimeout(function(){
+      $('.alert').fadeOut(2500);
+      }, 5000);
+
+
     </script>
   </body>
 </html>

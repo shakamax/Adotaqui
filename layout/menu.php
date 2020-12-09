@@ -52,7 +52,13 @@
           if(isset($_SESSION['login']) && $_SESSION['login'] == true){
       ?>
 
-      <a class="nav-item linkmodal" data-toggle="modal" data-target="#modalUser" style="color: #f8ffff;">Fernando Veríssimo &nbsp;<img class="img-fluid img-profile rounded-circle" src="img/verissimo.jpg"></a>
+      <a class="nav-item linkmodal" data-toggle="modal" data-target="#modalUser" style="color: #f8ffff;"> <?php 
+        if(isset($_SESSION['nome'])){
+          echo $_SESSION['nome'];
+        }else{
+          echo "Fernando Verissimo";
+        }
+       ?> &nbsp;<img class="img-fluid img-profile rounded-circle" src="img/verissimo.jpg"></a>
 
       <?php 
           } else {
@@ -75,12 +81,13 @@
         </button>
       </div>
       <div class="modal-body">
-        <form method="post" action="login.php" class="form-group">
+        <form method="post" action="db/userdb.php" class="form-group">
           <div class="col-12 text-center borda"> <h2>Adotaqui! <i class="fas fa-paw"></i></h2></div>
           <div class="col-12">&nbsp;</div>
           <div class="col-12 text-center">
             <label>Email</label>
             <input placeholder="Ex: joaozinho@email.com" type="email" name="email" class="form-control">
+            <input type="hidden" name="acao" value="login">
           </div>
           <div class="col-12">&nbsp;</div>
           <div class="col-12 text-center">
@@ -133,7 +140,14 @@
     <div class="modal-content">
       <div class="modal-header background-purple">
         <div class="col text-center">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Olá Fernando</h5>
+          <h5 class="modal-title" id="exampleModalCenterTitle">Olá <?php 
+            if(isset($_SESSION['nome'])){
+              echo $_SESSION['nome'];
+            }else {
+              echo "Fernando";
+            }
+
+           ?></h5>
         </div>
         <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
